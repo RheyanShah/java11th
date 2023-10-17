@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class ArraySum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int size = 5;
+
+        int[] A = new int[size];
+        int[] B = new int[size];
+        int[] C = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter a number for A[" + i + "]: ");
+            A[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter a number for B[" + i + "]: ");
+            B[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < size; i++) {
+            C[i] = A[i] + B[i];
+        }
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("A[" + i + "]: " + A[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("B[" + i + "]: " + B[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("C[" + i + "]: " + C[i] + " ");
+        }
+        System.out.println();
+    }
+}
